@@ -21,7 +21,86 @@
 .box3 {
     background-color: brown;
 }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+}
 
+.shop {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: linear-gradient(145deg, #1e2a38, #0d141c);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 12px 0 6px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #4fc3ff;
+}
+
+.stars {
+  color: gold;
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.card button {
+  margin: 14px 0 18px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+}
+
+.card button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(255, 120, 0, 0.6);
+  opacity: 0.95;
+}
 
 .footer {
   background-color: rgb(122, 121, 119);
